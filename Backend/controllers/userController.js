@@ -42,11 +42,7 @@ const registerUser = asyncHandler(async(req, res) => {
           email: user.email,
           
         })
-      } else {
-        res.status(400)
-        throw new Error('Invalid user data')
-      }
-  
+    
 
 })
 
