@@ -68,6 +68,9 @@ const loginUser = asyncHandler(async(req, res) => {
             name: user.name,
             email: user.email,
         })
+    }  else {
+        res.status(400)
+        throw new Error('Invalid credentials')
     }
 
     res.json({ message: 'login User' })
