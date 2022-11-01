@@ -83,8 +83,3 @@ const getMe = asyncHandler(async(req, res) => {
     res.json({ message: 'User data display' })
 })
 
-module.exports = {
-    registerUser,
-    loginUser,
-    getMe,
-}
