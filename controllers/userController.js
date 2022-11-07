@@ -74,17 +74,3 @@ const loginUser = asyncHandler(async(req, res) => {
     }
 
 })
-
-// @desc    Get user data
-// @route   POST /api/users/me
-// @access  Public
-
-const getMe = asyncHandler(async(req, res) => {
-    res.json({ message: 'User data display' })
-})
-
-module.exports = {
-    registerUser,
-    loginUser,
-    getMe,
-}
